@@ -20,10 +20,6 @@ def randomizeData(data):
     random.shuffle(output)
     return output
 
-#呼叫函數太多次會變慢,如果函數裡面有迴圈,會變超級慢= =
-#def innerProduct(w, x):
-#    return w[0]*x[0]+w[1]*x[1]+w[2]*x[2]+w[3]*x[3]+w[4]*x[4]
-
 def errorRate(data, w):
     errorCount = 0
     for x in data:
@@ -54,8 +50,8 @@ def pocket(trainingData, bound):
     return w_pocket
 
 start = time.time()
-trainingData = readData("C:/Users/hannah/.spyder-py3/CheChe's notes/ML by Lin/PLA_train.txt")
-testData = readData("C:/Users/hannah/.spyder-py3/CheChe's notes/ML by Lin/PLA_test.txt")
+trainingData = readData("your_path/PLA_train.txt")
+testData = readData("your_path/PLA_test.txt")
 bound = 50
 total = 0
 for i in range(2000):
