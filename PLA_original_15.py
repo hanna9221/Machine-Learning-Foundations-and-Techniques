@@ -26,7 +26,7 @@ def PLA(data):
                     w[i] = w[i] + x[5]*x[i]
     return count, w
 
-location = "C:/Users/hannah/.spyder-py3/CheChe's notes/ML by Lin/PLAdata.txt"
+location = "your_path/PLAdata.txt"
 data = readData(location)
 print(PLA(data))
             
