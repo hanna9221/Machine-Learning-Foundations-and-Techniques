@@ -67,11 +67,11 @@ def test_E_out(data, h):
             count += 1
     return count/len(data)
 
-trainLoc = "C:/Users/hannah/.spyder-py3/CheChe's notes/ML by Lin/hw2_19_trainingData.txt"
+trainLoc = "your_path/hw2_19_trainingData.txt"
 trainingData = readData(trainLoc)
 result = main(trainingData)
 h = result[1]
-testLoc = "C:/Users/hannah/.spyder-py3/CheChe's notes/ML by Lin/hw2_19_testingData.txt"
+testLoc = "your_path/hw2_19_testingData.txt"
 testingData = readData(testLoc)
 print(result[0])
 print(test_E_out(testingData, h))
